@@ -68,4 +68,13 @@ return {
   { 'tpope/vim-fugitive', cmd = "Git"},
   { 'leoluz/nvim-dap-go' },
   { 'theHamsta/nvim-dap-virtual-text'},
+  {
+    "utilyre/barbecue.nvim",
+    name = "barbecue",
+    version = "*",
+    dependencies = {
+      "SmiteshP/nvim-navic",
+      "nvim-tree/nvim-web-devicons", -- optional dependency
+    },
+  },
 } 
