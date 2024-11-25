@@ -10,7 +10,17 @@ vim.g.loaded_netrwPlugin = 1
 require("config.lazy")
 require('lualine').setup()
 require('bufferline').setup()
-require('nvim-tree').setup()
+
+-- Setup nerdtree
+require("nvim-tree").setup({
+  sort = {
+    sorter = "case_sensitive"
+  },
+  update_focused_file = {
+      enable = true,
+  }
+})
+
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("mason-nvim-dap").setup({
